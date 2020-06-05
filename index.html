@@ -4,39 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 
     <style>
-        ul {
-            justify-content: space-between;
-            width: 100%;
-            
-        }
-
-        p {
-            margin: 0;
-            display: inline;
-        }
-
-        #high_scores:hover {
-            color: red;
-        }
-
-        .container {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .card {
-            width: 400px;
-            height: 300px;
-        }
-
-        
-
-       
+     
     </style>
 </head>
 <body>
@@ -57,13 +30,30 @@
     <!-- main to hold the questions card -->
     <main>
         <div class="container" >
-                <div class="card">
-                    <h5 class="card-title">Start Quiz</h5>
-                    <p>Here is some text to read before you start the quiz</p>
-                    <div class="button_box">
-                        <button>Start</button>
-                    </div>
+            <div class="card">
+                <h5 class="card-title">Start Quiz</h5>
+                <p>Here is some text to read before you start the quiz</p>
+                <div class="button_box start_box">
+                    <button id="start_button">Start</button>
                 </div>
+            </div>
+            <div id="question_card" class="card">
+                <h5 class="card-title">Question</h5>
+                <p id="question_text">Here is a basic question</p>
+                <div class="button_box question_box">
+                    <button id="answer_a" data="a" class="answer_button">A. answer</button>
+                    <button id="answer_b" data="b" class="answer_button">B. answer</button>
+                    <button id="answer_c" data="c" class="answer_button">C. answer</button>
+                    <button id="answer_d" data="d" class="answer_button">D. answer</button>
+                </div>
+            </div>
+            <div class="card">
+                <h5 class="card-title">All Done</h5>
+                <p>Here is some text to read before you start the quiz</p>
+                <!-- <div class="button_box end_box">
+                    <button id="start_button">Start</button>
+                </div> -->
+            </div>
         </div>
     </main>
 

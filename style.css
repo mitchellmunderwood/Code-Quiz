@@ -1,0 +1,68 @@
+ul {
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+p {
+    margin: 0;
+    display: inline;
+}
+
+#high_scores:hover {
+    color: red;
+}
+
+.container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+h5 {
+    text-align: center;
+}
+
+.card p {
+    margin-left: 10px;
+}
+
+.button_box {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+button {
+    margin: 5px;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    background: purple;
+    color: white;
+}
+
+.start_box {
+    align-items: center;
+}
+
+#start_button {
+    width: 100px;   
+    text-align: center;
+}
+
+#question_card {
+    display: none;
+}
+
+
