@@ -36,48 +36,62 @@ questions.q4.choices.c = "c";
 questions.q4.choices.d = "d";
 questions.q4.answer = "d";
 
+var start_card = document.getElementById("start_card");
 var question_card = document.getElementById("question_card");
 var question_text = document.getElementById("question_text");
 var answer_a = document.getElementById("answer_a");
 var answer_b = document.getElementById("answer_b");
 var answer_c = document.getElementById("answer_c");
 var answer_d = document.getElementById("answer_d");
+var complete_card = document.getElementById("complete_card");
 
-var question_answer_selected = '';
+var index = 1;
 
 var question_box = document.querySelector(".question_box");
 
 question_box.addEventListener("click", function(event) {
     event.preventDefault();
+    var answer_selected = '';
+    
+    var correct_answer = questions["q"+index].answer;
+    console.log(correct_answer);
     if (event.target.matches("button")) {
-        question_answer_selected = event.target.getAttribute("data");
+        answer_selected = event.target.getAttribute("data");
     }
-    console.log("user selected", question_answer_selected);
+    console.log("user selected", answer_selected);
+    if (answer_selected === correct_answer) {
+        index++;
+        
+    };
+    if (index > 4) {
+        renderComplete();
+    } else {
+        renderQuestion(index);
+    }
 })
 
-function renderQuestion(string) {
-    var current_question = questions[string]
+function renderQuestion(num) {
+    var current_question = questions["q"+num]
     question_text.textContent = current_question.question;
-    answer_a.textContent = current_question.choices.a
-    answer_b.textContent = current_question.choices.b
-    answer_c.textContent = current_question.choices.c
-    answer_d.textContent = current_question.choices.d
+    answer_a.textContent = current_question.choices.a;
+    answer_b.textContent = current_question.choices.b;
+    answer_c.textContent = current_question.choices.c;
+    answer_d.textContent = current_question.choices.d;
 }
 
+function renderComplete() {
+    question_card.style.display = "none";
+    complete_card.style.display = "block";
+}
 
 
 var start_button = document.getElementById("start_button");
 var grade = 100;
 
 start_button.addEventListener("click", function() {
+    start_card.style.display = "none";
     question_card.style.display = "block";
-    renderQuestion("q1");
+    renderQuestion(1);
 })
 
 
-function takeQuiz() {
-    question_list = ['q1','q2','q3','q4'];
-    while
-
-
-}
