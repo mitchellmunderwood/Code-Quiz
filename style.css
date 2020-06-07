@@ -21,10 +21,11 @@ p {
 }
 
 .card {
-    width: 400px;
-    height: 300px;
+    /* width: 400px; */
+    /* height: 300px; */
     padding: 20px;
     margin-top: 10px;
+    border: none;
 }
 
 h5 {
@@ -52,6 +53,10 @@ button {
     color: white;
 }
 
+button:hover {
+    background: orange;
+}
+
 .start_box {
     align-items: center;
 }
@@ -69,3 +74,12 @@ button {
     display: none;
 }
 
+#response {
+    /* width: 400px; */
+    padding-left: 20px;
+    text-align: left;
+}
+
+#col {
+    max-width: 400px;
+}
