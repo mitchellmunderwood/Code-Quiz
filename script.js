@@ -136,6 +136,7 @@ submit_btn.addEventListener("click", function(event) {
     player_score = score;
     submitHighscore(player_name, player_score);
     renderHighscores();
+    index ++;
 })
 
 function submitHighscore(name, score) {
@@ -174,12 +175,21 @@ function clearHighscores() {
 function startOver() {
     header.style.display = "block";
     main.style.display = "block";
-    start_card.style.display = "block";
     highscoresEl.style.display = "none";
     complete_card.style.display = "none";
-    timer = 60;
-    index = 1;
-    score = 0;
+    if (index === 6) {
+        start_card.style.display = "block";
+        index = 1;
+        timer = 60;
+        score = 0;
+    }
+    if (index === 5) {
+        complete_card.style.display = "block"; 
+    } else {
+        question_card.display = "block";
+    }
+    
+    
 }
 
 back_btn.addEventListener("click", function() {
