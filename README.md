@@ -14,12 +14,12 @@
 
 ## Images
 
-> ![start_screen](/Users/mitchellunderwood/Desktop/CodingBootcamp/Deployment/Code_Quiz/README_Support/start_screen.png)
+> ![start_screen](./README_Support/start_screen.png)
 >
-> ![question_card](/Users/mitchellunderwood/Desktop/CodingBootcamp/Deployment/Code_Quiz/README_Support/question_card.png)
+> ![question_card](./README_Support/question_card.png)
 >
-> ![submit_card](/Users/mitchellunderwood/Desktop/CodingBootcamp/Deployment/Code_Quiz/README_Support/submit_card.png)
+> ![submit_card](./README_Support/submit_card.png)
 >
-> ![highscore_card](/Users/mitchellunderwood/Desktop/CodingBootcamp/Deployment/Code_Quiz/README_Support/highscore_card.png)
+> ![highscore_card](./README_Support/highscore_card.png)
 >
 > 
