@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
-    
+    <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
@@ -49,25 +48,10 @@
     </style>
 </head>
 <body>
-    <!-- header to hold the high score link and the timer -->
-    <header id="header">
-        <nav class="navbar navbar-expand bg-light navbar-light">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <p id="high_scores"> View Highscores</p>
-              </li>
-              <li class="nav-item">
-                <p>Timer: <p id="timer">0</p> </p>
-              </li>
-            </ul>
-          </nav>
-    </header>
-
-    <!-- main to hold the questions card -->
     <main id="main">
         <div  class="container" >
             <div id="col" class="col-sm-6 col-md-6 ">
-                <div id="start_card" class="card">
+                <!-- <div id="start_card" class="card">
                     <h5 class="card-title">Start Quiz</h5>
                     <p>Here is some text to read before you start the quiz</p>
                     <div class="button_box start_box">
@@ -83,8 +67,8 @@
                         <button id="answer_c" data="c" class="answer_button">C. answer</button>
                         <button id="answer_d" data="d" class="answer_button">D. answer</button>
                     </div>    
-                </div>
-                <div id="complete_card" class="card">
+                </div> -->
+                <div id="complete_card" class="card" style="display:block;">
                     <h5 class="card-title">All Done</h5>
                     <h6>Your final score is: <p id="score"></p></h6>
                         <p>Enter  Initials</p>
@@ -95,40 +79,5 @@
             </div>
         </div>
     </main>
-
-    <!-- high score modal -->
-    <section id="highscores"">
-            <div>
-                <h1>Highscores</h1>
-                <div id="score_list">
-                    
-                </div>
-                <button id="back_btn">Go Back</button>
-                <button id="clear_btn">Clear Scores</button>
-                
-
-            </div>
-    </section>
-
-    <script src='script.js' ></script>
 </body>
 </html>
-
-
-
-
-<!-- get html/css set up
-
-    create the htmls skeleton that will be the foundation for the start screen, questions, and high score page, it will be a header and a card
-
-    get your personal style and structure of the html for the questions, highscoore, and submission page done
-
-    style the pages using basic css and make sure it is responsive
-
-Get the js set up
-    basic quiz flow and function
-        get question content and flow worked out, get scoring and high score storage worked
-
-    Timer integration
-        get a static time working
-        get a responsive timer and timer cutoff function working -->
